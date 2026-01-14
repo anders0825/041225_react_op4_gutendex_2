@@ -14,7 +14,6 @@ export default function BookListPage() {
   const { books, isLoading, isLoadingMore, nextUrl } = useAppState();
   const { loadMore } = useBooksData();
 
-  // BookMark: Les mer om useRef, useCallback
   const observerRef = useRef();
 
   const lastBookRef = useCallback(
@@ -56,7 +55,7 @@ export default function BookListPage() {
             <FavoriteBtn book={book} />
 
             <Link
-              to={`/041225_react_op4_gutendex_2/books/${book.id}`}
+              to={`/books/${book.id}`}
               className="card-link"
               aria-label={`View details for ${book.title}`}
             />
