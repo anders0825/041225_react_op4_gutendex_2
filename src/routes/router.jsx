@@ -2,6 +2,13 @@
 router.jsx
 */
 
+const BaseURL = "/041225_react_op4_gutendex_2/";
+const PATHS = {
+  Home: "/041225_react_op4_gutendex_2/",
+  BookList: `/041225_react_op4_gutendex_2/books`,
+  BookDetails: `/041225_react_op4_gutendex_2/books/:id`,
+};
+
 import { createBrowserRouter } from "react-router-dom";
 
 // Pages:
@@ -12,7 +19,7 @@ import BookDetailsPage from "../pages/BookDetailsPage.jsx";
 
 const router = createBrowserRouter([
   {
-    path: "/041225_react_op4_gutendex_2",
+    path: "/041225_react_op4_gutendex_2/",
     element: <App />,
     children: [
       {
@@ -20,11 +27,11 @@ const router = createBrowserRouter([
         element: <HomePage />,
       },
       {
-        path: "books",
+        path: `/041225_react_op4_gutendex_2/books`,
         element: <BookListPage />,
       },
       {
-        path: "books/:id",
+        path: `/041225_react_op4_gutendex_2/books/:id`,
         element: <BookDetailsPage />,
       },
       {

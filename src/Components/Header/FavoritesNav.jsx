@@ -14,7 +14,7 @@ export default function FavoritesNav() {
   const { byFavorites } = useBooksData();
 
   async function navFavorites() {
-    navigate("/books");
+    navigate(`/041225_react_op4_gutendex_2/books`);
     await byFavorites();
   }
 

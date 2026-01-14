@@ -2,8 +2,6 @@
 BookListPage.jsx
 */
 
-
-
 import { useEffect, useRef, useCallback } from "react";
 import { Link } from "react-router-dom";
 import { useAppState } from "../context/AppStateContext";
@@ -13,7 +11,6 @@ import Loading from "../Components/Loading.jsx";
 import FavoriteBtn from "../Components/FavoriteBtn.jsx";
 
 export default function BookListPage() {
-
   const { books, isLoading, isLoadingMore, nextUrl } = useAppState();
   const { loadMore } = useBooksData();
 
@@ -59,7 +56,7 @@ export default function BookListPage() {
             <FavoriteBtn book={book} />
 
             <Link
-              to={`/books/${book.id}`}
+              to={`/041225_react_op4_gutendex_2/books/${book.id}`}
               className="card-link"
               aria-label={`View details for ${book.title}`}
             />

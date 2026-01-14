@@ -17,7 +17,7 @@ export default function SearchBar() {
     if (!text.trim()) return;
     setText("");
 
-    navigate("/books");
+    navigate(`/041225_react_op4_gutendex_2/books`);
     await bySearch(text);
   }
 

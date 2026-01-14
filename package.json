@@ -2,7 +2,7 @@
   "name": "041225_react_op4_gutendex_2",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://anders0825.github.io/",
+  "homepage": "https://anders0825.github.io/041225_react_op4_gutendex_2/",
   "type": "module",
   "scripts": {
     "predeploy": "pnpm run build",

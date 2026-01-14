@@ -23,7 +23,7 @@ export default function HomePage() {
               <FavoriteBtn book={book} />
 
               <Link
-                to={`/books/${book.id}`}
+                to={`/041225_react_op4_gutendex_2/books${book.id}`}
                 className="card-link"
                 aria-label={`View details for ${book.title}`}
               />
