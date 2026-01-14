@@ -13,7 +13,7 @@ export default function Header() {
   return (
     <header>
       <section className="item-cont" id="home-cont">
-        <Link to="/041225_react_op4_gutendex_2/">
+        <Link to="/">
           <img src={homeIcon} alt="Home Icon" id="home-icon" />
         </Link>
         <FavoritesNav />

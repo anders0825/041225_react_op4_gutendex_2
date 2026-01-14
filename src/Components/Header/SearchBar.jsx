@@ -17,7 +17,7 @@ export default function SearchBar() {
     if (!text.trim()) return;
     setText("");
 
-    navigate(`/041225_react_op4_gutendex_2/books`);
+    navigate("/books");
     await bySearch(text);
   }
 
@@ -29,12 +29,12 @@ export default function SearchBar() {
         onChange={(e) => setText(e.target.value)}
         onKeyDown={(e) => {
           if (e.key === "Enter") {
-            onSubmit(text);
+            onSubmit();
           }
         }}
         placeholder="Search for books..."
       />
-      <img src={searchIcon} alt="Search Icon" onClick={() => onSubmit(text)} />
+      <img src={searchIcon} alt="Search Icon" onClick={() => onSubmit()} />
     </>
   );
 }

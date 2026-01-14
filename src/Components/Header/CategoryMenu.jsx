@@ -28,7 +28,7 @@ export default function CategoryMenu() {
   ];
 
   async function selectCategory(cat) {
-    navigate(`/041225_react_op4_gutendex_2/books`);
+    navigate("/books");
     await byCategory(cat);
   }
 

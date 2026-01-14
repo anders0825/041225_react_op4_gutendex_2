@@ -8,13 +8,11 @@ import { useBooksData } from "../../hooks/useBooksData";
 import starMenu from "../../assets/icons/starMenu_icon.png";
 
 export default function FavoritesNav() {
-  // JavaScript:
-
   const navigate = useNavigate();
   const { byFavorites } = useBooksData();
 
   async function navFavorites() {
-    navigate(`/041225_react_op4_gutendex_2/books`);
+    navigate("/books");
     await byFavorites();
   }
 
