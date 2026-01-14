@@ -1,0 +1,93 @@
+/* CSS
+BookListPage.css
+*/
+
+#BookList-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+  gap: 25px;
+
+  padding: 50px 0;
+}
+
+#results-cont {
+  list-style: none;
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+
+  max-width: 1000px;
+}
+
+li.card {
+  position: relative;
+  transition: transform 0.2s ease;
+}
+
+.card:hover .BookList-item {
+  border: 2px solid var(--accent-main);
+}
+
+/* <Link /> overlay */
+.card-link {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.BookList-item {
+  position: relative;
+  z-index: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  width: 240px;
+  height: 420px;
+
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid var(--text-main);
+
+  background-color: var(--bg-alt);
+  color: var(--text-main);
+  text-decoration: none;
+
+  overflow: hidden;
+}
+
+.img-cont {
+  width: 100%;
+  height: 330px;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.img-cont img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.book-title {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+
+  overflow: hidden;
+  line-height: 1.5;
+  max-height: calc(1.5em * 2);
+}
+
+.book-author {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: var(--text-alt);
+}

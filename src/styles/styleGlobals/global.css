@@ -1,0 +1,104 @@
+/* CSS
+global.css
+*/
+
+/* Template Colors: 
+
+Monochrome:
+  --text-main: #f1eae7;
+  --text-alt: #c9c4c2;
+  --bg-main: #252528;
+  --bg-alt: #3f3f43;
+  --accent-main: #b0b1bc;
+  --accent-alt: #6b6b6f;
+  
+Deep-sea:
+  --text-main: #ebe6dd;
+  --text-alt: #c2beb6;
+  --bg-main: #111b25;
+  --bg-alt: #1b2435;
+  --accent-main: #607ea9;
+  --accent-alt: #415770;
+
+Benjamin Moore:
+  --text-main: #364042;
+  --text-alt: #2b3e3c;
+  --bg-alt: #f0e2d2;
+  --bg-main: #efeee5;
+  --bg-foot: #5b6d92;
+  --accent-main: #d18266;
+  --accent-alt: #d5e3e6;
+
+50s Resturant:
+  --text-main: #694322;
+  --text-alt: #c2beb6;
+  --bg-main: #362f2b;
+  --bg-alt: #e8dcc9;
+  --accent-main: #d04c35;
+  --accent-alt: #a26630;
+
+Utility Colors:
+
+  --utility-soft-red: #704141;
+  --utility-soft-blue: #415570;
+  --utility-soft-green: #435e46;
+
+  --utility-strong-yellow: #cbc21c;
+  --utility-strong-pink: #c2147d;
+
+  --utility-default-shadow: #000000d0;
+  --default-box-shadow: 5px 5px 10px var(--utility-default-shadow);
+
+*/
+
+:root {
+  /* Color Theme: */
+
+  --text-main: #d1cdc7;
+  --text-alt: #b5afa6;
+  --bg-alt: #2c2f31;
+  --bg-main: #181a1b;
+  --accent-main: #0054ae;
+  --accent-alt: #e94a93;
+
+  /* Utility Colors */
+
+  --utility-soft-red: #704141;
+  --utility-soft-blue: #415570;
+  --utility-soft-green: #435e46;
+
+  --utility-strong-yellow: #cbc21c;
+  --utility-strong-pink: #c2147d;
+
+  --utility-default-shadow: #000000a3;
+  --default-box-shadow: 0px 0px 8px var(--utility-default-shadow);
+
+  /* System Rendering */
+  color-scheme: light dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Global Resets */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* Base Document Settings */
+html {
+  scroll-behavior: smooth;
+  background-color: var(--bg-main);
+  font-size: 16px; /* 1rem = 16px */
+}
+
+/* default Typography and Theming */
+body {
+  color: var(--text-main);
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+}

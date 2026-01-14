@@ -1,0 +1,160 @@
+/* CSS
+Header.css
+*/
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row nowrap;
+  gap: 10px;
+
+  position: fixed;
+  top: 0;
+  z-index: 5;
+
+  width: 100svw;
+  max-height: 55px;
+
+  padding: 5px 10px;
+
+  background-color: var(--bg-alt);
+}
+
+/* ============= HOME ============= */
+
+#home-cont {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 5px;
+  width: 20%;
+  height: 37px;
+}
+
+#home-cont img {
+  height: 37px;
+  padding: 2px;
+  border: 2px solid var(--bg-alt);
+  border-radius: 2px;
+}
+
+#home-cont img:hover {
+  border: 2px solid var(--accent-main);
+}
+
+#home-cont img:active {
+  background-color: var(--accent-main);
+  border: 2px solid var(--accent-main);
+}
+
+/* ============= SEARCH ============= */
+
+#search-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+  width: 50%;
+}
+
+#search-cont input {
+  width: 250px;
+  height: 25px;
+
+  padding: 0 3px;
+  border: 2px solid var(--bg-main);
+  border-radius: 2px;
+
+  background-color: var(--bg-main);
+  color: var(--text-main);
+}
+
+#search-cont input:hover {
+  border: 2px solid var(--accent-main);
+}
+
+#search-cont img {
+  height: 30px;
+  padding: 2px;
+  border: 2px solid var(--bg-alt);
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+#search-cont img:hover {
+  border: 2px solid var(--accent-main);
+}
+
+/* ============= DROPDOWN MENU ============= */
+
+#menu-cont {
+  display: flex;
+  justify-content: flex-end;
+
+  width: 20%;
+  height: 35px;
+}
+
+#menu-cont img {
+  height: 35px;
+  padding: 2px;
+  border-radius: 2px;
+}
+
+#menu-cont img:hover {
+  background-color: var(--accent-main);
+}
+
+#menu-cont #dropdown-cont {
+  position: relative;
+  display: inline-block;
+}
+
+#menu-cont #dropdown-content {
+  list-style: none;
+
+  display: none;
+
+  z-index: 1;
+
+  position: absolute;
+  right: -10px;
+  top: 35px;
+
+  background-color: var(--bg-alt);
+
+  width: 125px;
+
+  color: var(--text-main);
+  font-size: 1rem;
+
+  box-shadow: var(--default-box-shadow);
+}
+
+#menu-cont #dropdown-content > li {
+  text-align: center;
+  width: 100%;
+
+  padding: 5px 10px;
+  border: 2px solid var(--bg-alt);
+}
+
+#menu-cont #dropdown-content > li:hover {
+  cursor: pointer;
+  border: 2px solid var(--accent-main);
+  background-color: var(--bg-main);
+}
+
+#menu-cont #dropdown-content > li:active {
+  cursor: pointer;
+  border: 2px solid var(--accent-main);
+  background-color: var(--accent-main);
+}
+
+#menu-cont #dropdown-cont:hover #dropdown-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+}

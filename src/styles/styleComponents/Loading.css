@@ -1,0 +1,57 @@
+/* CSS
+Loading.css
+*/
+
+#LoadingPage-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+  gap: 35px;
+
+  font-size: 1.5rem;
+
+  padding: 50px;
+}
+
+#anim-cont {
+  /* Animation Parameters: */
+
+  --anim-color: var(--accent-main);
+  --anim-size: 50px;
+
+  gap: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#anim-cont * {
+  width: var(--anim-size);
+  height: var(--anim-size);
+  border-radius: 100%;
+  background-color: var(--anim-color);
+  opacity: 0;
+  animation: fade 1s ease-in-out infinite;
+}
+
+#anim-cont *:nth-child(1) {
+  animation-delay: -0.66s;
+}
+
+#anim-cont *:nth-child(2) {
+  animation-delay: -0.33s;
+}
+
+@keyframes fade {
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  60%,
+  80% {
+    opacity: 0;
+  }
+}

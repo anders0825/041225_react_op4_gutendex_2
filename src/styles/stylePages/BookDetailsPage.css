@@ -1,0 +1,101 @@
+/* CSS
+BookDetailsPage.css
+*/
+
+#BookDetails-cont {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+#cover-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+
+  position: relative;
+}
+
+.details-link {
+  color: var(--accent-alt);
+  font-size: 1rem;
+  font-family: monospace;
+}
+
+.details-link:hover {
+  color: var(--accent-main);
+}
+
+.details-link:active {
+  color: var(--accent-alt);
+}
+
+#text-cont {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-flow: column nowrap;
+  gap: 10px;
+
+  max-width: 500px;
+  max-height: 300px;
+
+  margin: 10px 0px;
+}
+
+#title-cont {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: column nowrap;
+}
+
+.details-autor {
+  margin-left: 10px;
+  font-size: 1.2rem;
+
+  color: var(--text-alt);
+}
+
+#info-cont {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-flow: column nowrap;
+  gap: 10px;
+}
+
+.details-category {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: column nowrap;
+  gap: 2px;
+}
+
+.category-list {
+  margin-left: 20px;
+
+  max-width: 200px;
+}
+
+.languages-category {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: column nowrap;
+  gap: 2px;
+}
+
+.languages-list {
+  margin-left: 20px;
+}
+
+.details-digital {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+}

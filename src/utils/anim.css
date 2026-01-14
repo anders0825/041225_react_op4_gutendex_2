@@ -1,0 +1,90 @@
+/* 
+    <svg viewBox="25 25 50 50">
+        <circle r="20" cy="50" cx="50"></circle>
+    </svg> 
+*/
+
+svg {
+  width: 250px;
+  transform-origin: center;
+  animation: rotate360 2s linear infinite;
+}
+
+circle {
+  fill: none;
+  stroke: var(--accent-main);
+  stroke-width: 3;
+  stroke-dasharray: 1, 200;
+  stroke-dashoffset: 0;
+  stroke-linecap: round;
+  animation: dash 1.5s normal infinite;
+}
+
+@keyframes rotate360 {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes dash {
+  0% {
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+  }
+
+  50% {
+    stroke-dasharray: 90, 200;
+    stroke-dashoffset: -35px;
+  }
+
+  100% {
+    stroke-dashoffset: -125px;
+  }
+}
+
+/* 
+    <section id="anim-cont">
+        <span></span>
+        <span></span>
+        <span></span>
+    </section>
+*/
+
+#anim-cont {
+  /* Animation Parameters: */
+  --anim-color: var(--accent-main);
+  --anim-size: 50px;
+  gap: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#anim-cont * {
+  width: var(--anim-size);
+  height: var(--anim-size);
+  border-radius: 100%;
+  background-color: var(--anim-color);
+  opacity: 0;
+  animation: fade 1s ease-in-out infinite;
+}
+
+#anim-cont *:nth-child(1) {
+  animation-delay: -0.66s;
+}
+
+#anim-cont *:nth-child(2) {
+  animation-delay: -0.33s;
+}
+
+@keyframes fade {
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  60% {
+    opacity: 0;
+  }
+}

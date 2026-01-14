@@ -1,0 +1,118 @@
+/* CSS
+HomePage.css
+*/
+
+#HomePage-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+  gap: 10px;
+}
+
+#favorite-display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+  gap: 10px;
+
+  width: 100svw;
+
+  padding: 25px 0;
+}
+
+#favorites-list {
+  list-style: none;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  gap: 50px;
+
+  width: 100%;
+  padding: 50px;
+
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+li.card {
+  position: relative;
+  transition: transform 0.2s ease;
+}
+
+.card:hover .favorites-item {
+  border: 2px solid var(--accent-main);
+}
+
+/* <Link /> overlay */
+.card-link {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.favorites-item {
+  position: relative;
+  z-index: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  width: 240px;
+  height: 420px;
+
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid var(--text-main);
+
+  background-color: var(--bg-alt);
+
+  color: var(--text-main);
+  text-decoration: none;
+
+  overflow: hidden;
+}
+
+.img-cont {
+  width: 100%;
+  height: 330px;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.img-cont img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.book-title {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+
+  overflow: hidden;
+  line-height: 1.5;
+  max-height: calc(1.5em * 2);
+}
+
+.book-author {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: var(--text-alt);
+}
+
+.favorite-btn {
+  top: 20px;
+  left: 20px;
+}
+
+.favorite-btn img {
+  width: 25px;
+}

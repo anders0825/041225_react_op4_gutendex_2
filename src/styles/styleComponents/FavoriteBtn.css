@@ -1,0 +1,47 @@
+/* CSS
+FavoriteBtn.css
+*/
+
+.favorite-btn {
+  position: absolute;
+  z-index: 2;
+
+  opacity: 0.8;
+
+  padding: 0 1px;
+
+  border: 1px solid var(--bg-main);
+  border-radius: 100%;
+
+  cursor: pointer;
+
+  background-color: var(--bg-main);
+
+  transition: 0.1s ease-in-out;
+}
+
+.favorite-btn:hover {
+  scale: 1.15;
+}
+
+.favorite-btn:active {
+  scale: 0.95;
+}
+
+#BookList-cont .favorite-btn {
+  top: 20px;
+  left: 20px;
+}
+
+#BookList-cont .favorite-btn img {
+  width: 25px;
+}
+
+#BookDetails-cont .favorite-btn {
+  top: 10px;
+  left: 10px;
+}
+
+#BookDetails-cont .favorite-btn img {
+  width: 30px;
+}
