@@ -12,7 +12,7 @@ import BookDetailsPage from "../pages/BookDetailsPage.jsx";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/041225_react_op4_gutendex_2",
     element: <App />,
     children: [
       {
